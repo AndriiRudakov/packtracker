@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Tracker</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/jpg" href="file:///C:/Users/38067/Desktop/tracker/favicolon.jpg"/>
+</head>
+
+<body>
+<div class="container">
+<h2 id="currentDate"></h2>
+<h1>Спаковано за сьогодні: <p id="demo">0</p></h1>
+
+<button id="myBtn" accesskey="h" >Пакунок +1</button>
+
+</div>
+<footer>Developed by <a style="font-size: 0.7rem;" target="_blank" href="https://www.instagram.com/andruha.nastyle/">@Andruha.Nastyle</a></footer>
+<script>
+let today = new Date();
+let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+let a = 1;
+document.getElementById("myBtn").addEventListener("click", function() {
+  document.getElementById("demo").innerHTML = `${a++}`;
+});
+
+document.getElementById("currentDate").innerHTML = date;
+
+function topScore(){
+    return `Top score per day: 162 спаковано, йоптє!`
+}
+
+</script>	
+
+</body>
+
+
+</html>
