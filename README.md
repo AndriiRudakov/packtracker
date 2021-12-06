@@ -1,2 +1,2 @@
 # packtracker
-https://andriirudakov.github.io/packtracker/tracker.html
+https://andriirudakov.github.io/packtracker/index.html
